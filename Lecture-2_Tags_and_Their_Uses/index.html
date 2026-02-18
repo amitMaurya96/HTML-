@@ -118,19 +118,18 @@
 <!-- Media : Image, Audio, Video etc. -->
 <div>
 
-    <!-- Image : loading:-Controls lazy loading (lazy, eager, auto)
-        Loding="lazy" - “Don’t load this image/iframe until the user is about to see it.”
-        Meaning : used for browser defers loading until the element is about to enter the viewport (i.e., when the user scrolls near it).:Normally, browsers load all images/iframes as soon as the page loads.  -->
+<!-- Image : loading:-Controls lazy loading (lazy, eager, auto)
+    Loding="lazy" - “Don’t load this image/iframe until the user is about to see it.”
+    Meaning : used for browser defers loading until the element is about to enter the viewport (i.e., when the user scrolls near it).:Normally, browsers load all images/iframes as soon as the page loads.  -->
     <img src="imgLink" alt="Image Description" width="200px" height="200px" title="Image Title : To be shown when user hover the image" loading="lazy">
 
 
-    <!-- Audio 
+<!-- Audio 
     loop : Specifies that the audio will start over again, every time it is finished.
     muted : Specifies that the audio output of the video should be muted.
     preload : Specifies if and how the author thinks the audio should be loaded when the page loads. (auto, metadata, none) auto : Indicates that the whole audio file can be downloaded, even if the user is not expected to use it. metadata : Indicates that only metadata (e.g. length) is fetched. none : Indicates that the audio should not be loaded when the page loads.
     disableremoteplayback : Disables remote playback of the audio element.
-
-    -->
+-->
     <audio controls src="audioLink" type="audio/mpeg" loop muted preload="metadata" disableremoteplayback >
         Your browser does not support the audio element.
     </audio>
@@ -141,13 +140,13 @@
 
 
 
-    <!-- Video 
+<!-- Video 
     autoplay : Specifies that the video will start playing as soon as it is ready.
     loop : Specifies that the video will start over again, every time it is finished.
     muted : Specifies that the audio output of the video should be muted.
     preload : Specifies if and how the author thinks the video should be loaded when the page loads. (auto, metadata, none) auto : Indicates that the whole video file can be downloaded, even if the user is not expected to use it. metadata : Indicates that only metadata (e.g. length) is fetched. none : Indicates that the video should not be loaded when the page loads.
     disableremoteplayback : Disables remote playback of the video element.
-    -->
+-->
     <video controls src="videoLink" type="video/mp4" width="200px" height="100px" autoplay loop muted preload="metadata" disableremoteplayback>
         Your browser does not support the video element.
     </video>
